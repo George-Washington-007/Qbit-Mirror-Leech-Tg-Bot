@@ -69,7 +69,7 @@ This is a Telegram Bot written in Python for mirroring files on the Internet to 
 
 - Clone this repo:
 ```
-git clone https://github.com/George-Washington-007/Mirror-Leech-Tg-Bot mirrorbot/ && cd mirrorbot
+git clone https://github.com/George-Washington-007/Qbit-Mirror-Leech-Tg-Bot mirrorbot/ && cd mirrorbot
 ```
 - For Debian based distros
 ```
