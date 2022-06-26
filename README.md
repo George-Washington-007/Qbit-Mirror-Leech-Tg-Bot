@@ -251,7 +251,8 @@ python3 generate_drive_token.py
 </details>       
 
 ## Deploying on VPS
-
+<details>
+    <summary><b>Click Here For More Details</b></summary>   
 **IMPORTANT NOTES**:
 1. You must set `SERVER_PORT` variable to `80` or any other port you want to use.
 2. To clear the container (this will not affect on the image):
@@ -264,6 +265,7 @@ sudo docker image prune -a
 ```
 4. Check the number of processing units of your machine with `nproc` cmd and times it by 4, then edit `AsyncIOThreadsCount` in qBittorrent.conf.
 5. Use `anasty17/mltb:arm64` for oracle or arm64/v8.
+</details>       
    - Tutorial Video for Deploying on Oracle VPS:
      - Thanks to [Wiszky](https://github.com/vishnoe115)
      - No need to use sudo su, you can also use sudo before each cmd!
@@ -272,7 +274,8 @@ sudo docker image prune -a
 ------
 
 ### Deploying on VPS Using Docker
-
+<details>
+    <summary><b>Click Here For More Details</b></summary>   
 - Start Docker daemon (skip if already running), if installed by snap then use 2nd command:
 ```
 sudo dockerd
@@ -301,9 +304,11 @@ sudo docker stop id
 ```
 
 ----
+</details>       
 
 ### Deploying on VPS Using docker-compose
-
+<details>
+    <summary><b>Click Here For More Details</b></summary>   
 **NOTE**: If you want to use port other than 80, change it in [docker-compose.yml](https://github.com/anasty17/mirror-leech-telegram-bot/blob/master/docker-compose.yml) also.
 
 ```
@@ -325,6 +330,7 @@ sudo docker-compose stop
 ```
 sudo docker-compose start
 ```
+</details>       
 - Tutorial video from Tortoolkit repo for docker-compose and checking ports
 <p><a href="https://youtu.be/c8_TU1sPK08"> <img src="https://img.shields.io/badge/See%20Video-black?style=for-the-badge&logo=YouTube" width="160""/></a></p>
 
@@ -340,7 +346,6 @@ sudo docker-compose start
 ## Bot commands to be set in [@BotFather](https://t.me/BotFather)
 <details>
     <summary><b>Click Here For Bot Commands</b></summary>
-
 ```
 mirror - Mirror
 zipmirror - Mirror and upload as zip
@@ -381,11 +386,11 @@ ping - Ping the Bot
 help - All cmds with description
 ```
 ------
-       
 </details>     
 
 ## UPSTREAM REPO (Recommended)
-
+<details>
+    <summary><b>Click Here For More Details</b></summary>   
 - `UPSTREAM_REPO` variable can be used for edit/add any file in repository.
 - You can add private/public repository link to grab/overwrite all files from it.
 - You can skip adding the privates files like token.pickle or accounts folder before deploying, also no need to add variables direct links except **config.env**, simply fill `UPSTREAM_REPO` private one in case you want to grab all files including private files.
@@ -396,6 +401,7 @@ help - All cmds with description
 - `UPSTREAM_BRANCH` don't ever fill heroku here.
 
 ------
+</details>       
 
 ## Using Service Accounts for uploading to avoid user rate limit
 >For Service Account to work, you must set `USE_SERVICE_ACCOUNTS` = "True" in config file or environment variables.
