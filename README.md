@@ -195,17 +195,28 @@ Fill up rest of the fields. Meaning of each field is discussed below:
 </details>       
 
 ### MEGA
+<details>
+    <summary><b>Click Here For More Details</b></summary>   
 - `MEGA_API_KEY`: Mega.nz API key to mirror mega.nz links. Get it from [Mega SDK Page](https://mega.nz/sdk)
 - `MEGA_EMAIL_ID`: E-Mail ID used to sign up on mega.nz for using premium account.
 - `MEGA_PASSWORD`: Password for mega.nz account.
-
+</details>
+       
 ### GDTOT
+<details>
+    <summary><b>Click Here For More Details</b></summary>   
 - `CRYPT`: Cookie for gdtot google drive link generator. Follow these [steps](https://github.com/anasty17/mirror-leech-telegram-bot/tree/master#gdtot-cookies).
+</details>      
 
 ### Buttons
+<details>
+    <summary><b>Click Here For More Details</b></summary>   
 - `VIEW_LINK`: View Link button to open file Index Link in browser instead of direct download link, you can figure out if it's compatible with your Index code or not, open any video from you Index and check if its URL ends with `?a=view`, if yes make it `True`. Compatible with [BhadooIndex](https://gitlab.com/ParveenBhadooOfficial/Google-Drive-Index) Code. Default is `False`. `Bool`
+</details>       
 
 ### Torrent Search
+<details>
+    <summary><b>Click Here For More Details</b></summary>   
 - `SEARCH_API_LINK`: Search api app link. Get your api from deploying this [repository](https://github.com/Ryuk-me/Torrent-Api-py).
   - Supported Sites:
   >1337x, Piratebay, Nyaasi, Torlock, Torrent Galaxy, Zooqle, Kickass, Bitsearch, MagnetDL, Libgen, YTS, Limetorrent, TorrentFunk, Glodls, TorrentProject and YourBittorrent
@@ -213,12 +224,11 @@ Fill up rest of the fields. Meaning of each field is discussed below:
 - `SEARCH_PLUGINS`: List of qBittorrent search plugins (github raw links). I have added some plugins, you can remove/add plugins as you want. Main Source: [qBittorrent Search Plugins (Official/Unofficial)](https://github.com/qbittorrent/search-plugins/wiki/Unofficial-search-plugins).
 
 ------
+</details>       
 
 ### 3. Getting Google OAuth API credential file and token.pickle
-
 <details>
     <summary><b>Click Here For Notes</b></summary>
-       
 - Old authentication changed, now we can't use bot or replit to generate token.pickle. You need OS with a browser.
 - Windows users should install python3 and pip. You can find how to install and use them from google or from this [telegraph](https://telegra.ph/Create-Telegram-Mirror-Leech-Bot-by-Deploying-App-with-Heroku-Branch-using-Github-Workflow-12-06) from [Wiszky](https://github.com/vishnoe115) tutorial.
 - You can ONLY open the generated link from `generate_drive_token.py` in local browser.
@@ -238,7 +248,6 @@ pip3 install google-api-python-client google-auth-httplib2 google-auth-oauthlib
 python3 generate_drive_token.py
 ```
 ------
-       
 </details>       
 
 ## Deploying on VPS
