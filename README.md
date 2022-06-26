@@ -72,7 +72,6 @@ This is a Telegram Bot written in Python for mirroring files on the Internet to 
 <p><a href="https://www.youtube.com/watch?v=gFQWJ4ftt48"> <img src="https://img.shields.io/badge/See%20Video-black?style=for-the-badge&logo=YouTube" width="160""/></a></p>
 
 ### 1. Installing requirements
-       
 <details>
     <summary><b>Click Here For More Details</b></summary>
 
@@ -102,6 +101,8 @@ pip3 install -r requirements-cli.txt
 </details>       
        
 ### 2. Setting up config file
+<details>
+    <summary><b>Click Here For More Details</b></summary>
 
 ```
 cp config_sample.env config.env
@@ -110,6 +111,8 @@ cp config_sample.env config.env
 ```
 _____REMOVE_THIS_LINE_____=True
 ```
+</details>       
+
 Fill up rest of the fields. Meaning of each field is discussed below:
 
 **1. Required Fields**
@@ -125,7 +128,6 @@ Fill up rest of the fields. Meaning of each field is discussed below:
 - `IS_TEAM_DRIVE`: Set `True` if uploading to TeamDrive. Default is `False`. `Bool`
 - `TELEGRAM_API`: This is to authenticate your Telegram account for downloading Telegram files. You can get this from https://my.telegram.org. `Int`
 - `TELEGRAM_HASH`: This is to authenticate your Telegram account for downloading Telegram files. You can get this from https://my.telegram.org.
- 
 </details>
 
 **2. Optional Fields**
@@ -145,7 +147,6 @@ Fill up rest of the fields. Meaning of each field is discussed below:
 - `TORRENT_TIMEOUT`: Timeout of dead torrents downloading with qBittorrent and Aria2c in seconds.
 - `EXTENSION_FILTER`: File extensions that won't upload/clone. Separate them by space.
 - `INCOMPLETE_TASK_NOTIFIER`: Get incomplete task messages after restart. Require database and (supergroup or channel). Default is `False`. `Bool`
-       
 </details>
 
 ### Update
