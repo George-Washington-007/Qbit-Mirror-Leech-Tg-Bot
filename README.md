@@ -480,17 +480,25 @@ python3 add_to_team_drive.py -d SharedTeamDriveSrcID
 ### Generate Database
 
 **1. Using Railway**
+<details>
+    <summary><b>Click Here For More Details</b></summary>   
 - Go to [railway](https://railway.app) and create account
 - Start new project
 - Press on `Provision PostgreSQL`
 - After creating database press on `PostgresSQL`
 - Go to `Connect` column
 - Copy `Postgres Connection URL` and fill `DATABASE_URL` variable with it
+</details>       
 
 **2. Using Heroku PostgreSQL**
+<details>
+    <summary><b>Click Here For More Details</b></summary>   
 <p><a href="https://dev.to/prisma/how-to-setup-a-free-postgresql-database-on-heroku-1dc1"> <img src="https://img.shields.io/badge/See%20Dev.to-black?style=for-the-badge&logo=dev.to" width="160""/></a></p>
+</details>       
 
 **3. Using ElephantSQL**
+<details>
+    <summary><b>Click Here For More Details</b></summary>   
 - Go to [elephantsql](https://elephantsql.com) and create account
 - Hit `Create New Instance`
 - Follow the further instructions in the screen
@@ -501,6 +509,7 @@ python3 add_to_team_drive.py -d SharedTeamDriveSrcID
 - Copy your database url, and fill `DATABASE_URL` variable with it
 
 ------
+</details>       
 
 ## Multi Search IDs
 To use list from multi TD/folder. Run driveid.py in your terminal and follow it. It will generate **drive_folder** file or u can simply create `drive_folder` file in working directory and fill it, check below format:
@@ -536,6 +545,8 @@ Where host is the name of extractor (eg. instagram, Twitch). Multiple accounts o
 -----
 
 ## Gdtot Cookies
+<details>
+    <summary><b>Click Here For More Details</b></summary>   
 To Clone or Leech gdtot link follow these steps:
 1. Login/Register to [gdtot](https://new.gdtot.top).
 2. Copy this script and paste it in browser address bar.
@@ -564,3 +575,6 @@ To Clone or Leech gdtot link follow these steps:
 4. From this you have to paste value for **CRYPT** in config.env file.
 
 -----
+</details>
+       
+### THANK YOU 😊       
