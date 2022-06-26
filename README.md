@@ -11,6 +11,8 @@
 ------
 
 ## Deploy With CLI
+<details>
+    <summary><b>Click Here For More Details</b></summary>
 
 - Clone this repo:
 ```
@@ -51,8 +53,11 @@ git push heroku heroku:master -f
 ```
 
 ------
+</details>  
 
 ### Extras
+<details>
+    <summary><b>Click Here For More Details</b></summary>
 
 - To create heroku-postgresql database
 ```
@@ -84,8 +89,11 @@ heroku logs -t
 ```
 
 ------
+</details>  
 
 ## Deploy With Github Workflow
+<details>
+    <summary><b>Click Here For More Details</b></summary>
 
 1. Go to Repository Settings -> Secrets
 
@@ -118,3 +126,4 @@ heroku logs -t
 6. Choose `heroku` branch and click on Run workflow
 
 ![Run Workflow](https://telegra.ph/file/f44c7465d58f9f046328b.png)
+</details>  
