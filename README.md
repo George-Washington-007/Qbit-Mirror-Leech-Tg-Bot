@@ -14,7 +14,7 @@
 
 - Clone this repo:
 ```
-git clone https://github.com/George-Washington-007/Mirror-Leech-Tg-Bot mirrorbot/ && cd mirrorbot
+git clone https://github.com/George-Washington-007/Qbit-Mirror-Leech-Tg-Bot mirrorbot/ && cd mirrorbot
 ```
 - Switch to heroku branch
   - **NOTE**: Don't commit changes in master branch. If you have committed your changes in master branch and after that you switched to heroku branch, the new added files(private files) will `NOT` appear in heroku branch.
