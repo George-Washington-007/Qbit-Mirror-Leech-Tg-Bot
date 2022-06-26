@@ -154,26 +154,37 @@ Fill up rest of the fields. Meaning of each field is discussed below:
 - `UPSTREAM_BRANCH`: Upstream branch for update. Default is `master`.
 
 ### Leech
+<details>
+    <summary><b>Click Here For More Details</b></summary>   
 - `TG_SPLIT_SIZE`: Size of split in bytes. Default is `2GB`.
 - `AS_DOCUMENT`: Default type of Telegram file upload. Default is `False` mean as media. `Bool`
 - `EQUAL_SPLITS`: Split files larger than **TG_SPLIT_SIZE** into equal parts size (Not working with zip cmd). Default is `False`. `Bool`
 - `CUSTOM_FILENAME`: Add custom word to leeched file name.
+</details>       
 
 ### qBittorrent
+<details>
+    <summary><b>Click Here For More Details</b></summary>   
 - `BASE_URL_OF_BOT`: Valid BASE URL where the bot is deployed to use qbittorrent web selection. Format of URL should be `http://myip`, where `myip` is the IP/Domain(public) of your bot or if you have chosen port other than `80` so write it in this format `http://myip:port` (`http` and not `https`). This Var is optional on VPS and required for Heroku specially to avoid app sleeping/idling. For Heroku fill `https://yourappname.herokuapp.com`. Still got idling? You can use http://cron-job.org to ping your Heroku app.
 - `SERVER_PORT`: Only For VPS even if `IS_VPS` is `False`, which is the **BASE_URL_OF_BOT** Port.
 - `WEB_PINCODE`: If empty or `False` means no more pincode required while qbit web selection. `Bool`
 - `QB_SEED`: QB torrent will be seeded after and while uploading until reaching specific ratio or time, edit `MaxRatio` or `GlobalMaxSeedingMinutes` or both from qbittorrent.conf (`-1` means no limit, but u can cancel manually by gid). **NOTE**: 1. Don't change `MaxRatioAction`, 2. Only works with `/qbmirror` and `/qbzipmirror`. Default is `False`. `Bool`
   - **Qbittorrent NOTE**: If your facing ram exceeded issue then set limit for `MaxConnecs`, decrease `AsyncIOThreadsCount` in qbittorrent config and set limit of `DiskWriteCacheSize` to `32`.
+ </details>      
 
 ### RSS
+<details>
+    <summary><b>Click Here For More Details</b></summary>   
 - `RSS_DELAY`: Time in seconds for rss refresh interval. Recommended `900` second at least. Default is `900` in sec.
 - `RSS_COMMAND`: Choose command for the desired action.
 - `RSS_CHAT_ID`: Chat ID where rss links will be sent. If using channel then add channel id.
 - `USER_SESSION_STRING`: To send rss links from your telegram account. Instead of adding bot to channel then linking the channel to group to get rss link since bot will not read command from itself or other bot. To generate session string use this command `python3 generate_string_session.py` after mounting repo folder for sure.
   - **RSS NOTE**: `DATABASE_URL` and `RSS_CHAT_ID` is required, otherwise all rss commands will not work. You must use bot in group. You can add the bot to a channel and link this channel to group so messages sent by bot to channel will be forwarded to group without using `USER_STRING_SESSION`.
+</details>       
 
 ### Private Files
+<details>
+    <summary><b>Click Here For More Details</b></summary>   
 - `ACCOUNTS_ZIP_URL`: Only if you want to load your Service Account externally from an Index Link or by any direct download link NOT webpage link. Archive the accounts folder to ZIP file. Fill this with the direct download link of zip file. If index need authentication so add direct download as shown below:
   - `https://username:password@example.workers.dev/...`
 - `TOKEN_PICKLE_URL`: Only if you want to load your **token.pickle** externally from an Index Link. Fill this with the direct link of that file.
@@ -181,6 +192,7 @@ Fill up rest of the fields. Meaning of each field is discussed below:
 - `YT_COOKIES_URL`: Youtube authentication cookies. Check setup [Here](https://github.com/ytdl-org/youtube-dl#how-do-i-pass-cookies-to-youtube-dl). Use gist raw link and remove commit id from the link, so you can edit it from gists only.
 - `NETRC_URL`: To create .netrc file contains authentication for aria2c and yt-dlp. Use gist raw link and remove commit id from the link, so you can edit it from gists only. **NOTE**: After editing .nterc you need to restart the docker or if deployed on heroku so restart dyno in case your edits related to aria2c authentication.
   - **NOTE**: All above url variables used incase you want edit them in future easily without deploying again or if you want to deploy from public fork. If deploying using cli or private fork you can leave these variables empty add token.pickle, accounts folder, drive_folder, .netrc and cookies.txt directly to root but you can't update them without rebuild OR simply leave all above variables and use private UPSTREAM_REPO.
+</details>       
 
 ### MEGA
 - `MEGA_API_KEY`: Mega.nz API key to mirror mega.nz links. Get it from [Mega SDK Page](https://mega.nz/sdk)
