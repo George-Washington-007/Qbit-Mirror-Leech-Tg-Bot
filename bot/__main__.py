@@ -70,9 +70,9 @@ def start(update, context):
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
-Hello Darling 🌹
-➟ __I can upload anything you want to Telegram. Add me to any Group or Use here and Start uploading!__
-➟ __I can mirror all your links to Google Drive!__
+<b>Hello Darling</b> 🌹
+➟ <i>I can upload anything you want to Telegram. Add me to any Group or Use here and Start uploading!</i>
+➟ <i>I can mirror all your links to Google Drive!</i>
 For More: /{BotCommands.HelpCommand} to get a list of available commands!
 '''
         sendMarkup(start_string, context.bot, update.message, reply_markup)
